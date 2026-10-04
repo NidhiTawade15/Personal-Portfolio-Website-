@@ -1,0 +1,70 @@
+/* ===== General Settings ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+body { font-family:  sans-serif; line-height: 1.6; background: #f5f5fb;  color: #222222; }
+/* ===== Navigation Bar ===== */
+header { background: #111727; position: sticky;  top: 0; z-index: 1000; }
+.navbar { max-width: 1100px; padding: 18px 25px; display: flex; justify-content: space-between; align-items: center; }
+.logo { color: rgb(255, 255, 255); font-size: 25px; }
+.nav-links { display: flex; list-style: none;  gap: 25px; }
+.nav-links a { color: rgb(255, 255, 255);  text-decoration: none; font-size: 16px;  transition: 0.3s; }
+.nav-links a:hover { color: #60a5fa; }
+/* ===== Home Section ===== */
+.home { min-height: 90vh; max-width: 1100px; margin: auto; padding: 70px 25px; display: flex;  justify-content: space-between; align-items: center;  gap: 50px; }
+.home-content { flex: 1; }
+.home-content h3 { font-size: 25px; margin-bottom: 10px; }
+.home-content h1 { font-size: 55px; color: #2563eb; margin-bottom: 10px; }
+.home-content h2 { font-size: 30px; margin-bottom: 20px; }
+.home-content p { max-width: 550px; font-size: 18px; margin-bottom: 30px; }
+.btn { display: inline-block; background: #2563eb; color: white;  padding: 12px 25px;  border-radius: 6px;  transition: 0.3s; }
+.btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+/* ===== Profile Image ===== */
+.home-image { flex: 1; text-align: center; }
+.home-image img { width: 280px; height: 280px; object-fit: cover; border-radius: 50%; border: 6px solid #2563eb; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); }
+/* ===== Common Section ===== */
+section { padding: 80px 25px; }
+.section-title { text-align: center; font-size: 35px; margin-bottom: 45px; color: #172711; }
+/* ===== About ===== */
+.about {  background: rgba(255, 255, 255, 0.116); text-decoration-color: rgb(208, 255, 0); }
+.about-content { max-width: 850px; margin: auto;text-align: center; }
+.about-content h3 { font-size: 25px; margin-bottom: 15px; }
+.about-content p { font-size: 17px;margin-bottom: 15px; }
+/* ===== Skills ===== */
+.skills { max-width: 1100px; margin: auto; }
+.skills-container { display: grid;grid-template-columns: repeat(4, 1fr);gap: 20px; }
+.skill-card { background: white; padding: 30px 20px; text-align: center; border-radius: 10px;; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);;transition: 0.3s; }
+.skill-card:hover { transform: translateY(-8px); }
+.skill-card h3 { color: #2563eb; margin-bottom: 10px; }
+/* ===== Projects ===== */
+.projects { background: white; }
+.project-container { max-width: 1100px;margin: auto;;display: grid;grid-template-columns: repeat(3, 1fr); gap: 25px; }
+.project-card { padding: 30px;border-radius: 10px;background: #f5f7fb;;box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);; transition: 0.3s; }
+.project-card:hover { transform: translateY(-8px); }
+.project-card h3 { color: #3c25eb;margin-bottom: 15px; }
+/* ===== Education ===== */
+.education { max-width: 900px; margin: auto; }
+.education-box { background: rgb(255, 255, 255);padding: 35px;text-align: center;border-radius: 10px;; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); }
+.education-box h3 { color: #2563eb; margin-bottom: 15px; }
+/* ===== Contact ===== */
+.contact { background: white; }
+.contact-box { max-width: 600px;margin: auto;; background: #f5f7fb;padding: 30px; border-radius: 10px; text-align: center;}
+.contact-box p { margin: 12px 0;}
+/* ===== Footer ===== */
+footer { background: #111827; color: white; text-align: center; padding: 20px;}
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .navbar { flex-direction: column; gap: 15px;}
+    .nav-links { flex-wrap: wrap; justify-content: center; gap: 15px;}
+    .home { flex-direction: column-reverse; text-align: center; padding-top: 50px; }
+    .home-content h1 { font-size: 42px;}
+    .home-content h2 { font-size: 25px;}
+    .home-image img { width: 220px; height: 220px; }
+    .skills-container { grid-template-columns: repeat(2, 1fr);}
+    .project-container { grid-template-columns: 1fr;}
+}
+@media (max-width: 480px) {
+    .skills-container { grid-template-columns: 1fr; }
+    .home-content h1 { font-size: 36px; }
+    .section-title { font-size: 30px; }
+    .nav-links { gap: 10px; }
+    .nav-links a { font-size: 14px; }
+}
